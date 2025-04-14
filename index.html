@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
-    <header class="hero">
+    <!-- HERO SECTION -->
+    <section class="hero">
       <div class="hero-image"></div>
 
       <nav class="navbar">
         <div class="logo">WanderLust</div>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
         <div class="nav-links">
           <a href="#">Home</a>
           <a href="#">Destinations</a>
@@ -20,7 +20,28 @@
           <a href="#">Gallery</a>
           <a href="#">About</a>
         </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
+
+      <!-- Mobile Navigation -->
+      <div class="mobile-nav">
+        <ul class="mobile-nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Travel Tips</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Overlay -->
+      <div class="overlay"></div>
 
       <div class="hero-content">
         <p class="hero-subtitle">EXPLORE THE WORLD WITH ME</p>
@@ -37,7 +58,7 @@
         <p>SCROLL DOWN</p>
         <div class="scroll-arrow"></div>
       </div>
-    </header>
+    </section>
 
     <!-- FEATURED DESTINATIONS SECTION -->
     <section class="section">
