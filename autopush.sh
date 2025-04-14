@@ -7,6 +7,6 @@ read commitMessage
 # Git commands
 git add .
 git commit -m "$commitMessage"
-git push origin main
+git push origin master
 
 echo "✅ Code pushed to GitHub successfully!"
