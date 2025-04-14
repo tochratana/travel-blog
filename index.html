@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Travel Blog</title>
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-image"></div>
+
+      <nav class="navbar">
+        <div class="logo">WanderLust</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Destinations</a>
+          <a href="#">Travel Tips</a>
+          <a href="#">Gallery</a>
+          <a href="#">About</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="hero-subtitle">EXPLORE THE WORLD WITH ME</p>
+        <h1 class="hero-title">Adventure Awaits Around Every Corner</h1>
+        <p class="hero-description">
+          Join me as I explore breathtaking landscapes, vibrant cultures, and
+          hidden gems across the globe. Travel tips, stunning photography, and
+          unforgettable stories await.
+        </p>
+        <button class="hero-button">Discover Adventures</button>
+      </div>
+
+      <div class="scroll-indicator">
+        <p>SCROLL DOWN</p>
+        <div class="scroll-arrow"></div>
+      </div>
+    </header>
+
+    <!-- FEATURED DESTINATIONS SECTION -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Featured Destinations</h2>
+        <p class="section-subtitle">
+          Explore some of my favorite places from around the world, with
+          insights and tips to help you plan your next adventure.
+        </p>
+      </div>
+
+      <div class="destinations-grid">
+        <div class="destination-card">
+          <img
+            src="/api/placeholder/400/320"
+            alt="Bali"
+            class="destination-img"
+          />
+          <div class="destination-content">
+            <h3 class="destination-title">Bali</h3>
+            <p class="destination-location">
+              <span>Indonesia</span>
+            </p>
+            <p class="destination-description">
+              Discover the Island of Gods with its lush rice terraces, ancient
+              temples, and vibrant beach culture.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img
+            src="/api/placeholder/400/320"
+            alt="Santorini"
+            class="destination-img"
+          />
+          <div class="destination-content">
+            <h3 class="destination-title">Santorini</h3>
+            <p class="destination-location">
+              <span>Greece</span>
+            </p>
+            <p class="destination-description">
+              Experience the iconic blue and white architecture overlooking the
+              stunning caldera and Aegean Sea.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img
+            src="/api/placeholder/400/320"
+            alt="Kyoto"
+            class="destination-img"
+          />
+          <div class="destination-content">
+            <h3 class="destination-title">Kyoto</h3>
+            <p class="destination-location">
+              <span>Japan</span>
+            </p>
+            <p class="destination-description">
+              Step back in time in this ancient capital with thousands of
+              temples, shrines, and traditional gardens.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST BLOG POSTS SECTION -->
+    <section class="section bg-light">
+      <div class="section-header">
+        <h2 class="section-title">Latest Travel Stories</h2>
+        <p class="section-subtitle">
+          Read my latest adventures, travel tips, and insights from journeys
+          around the world.
+        </p>
+      </div>
+
+      <div class="posts-grid">
+        <div class="post-card">
+          <img
+            src="/api/placeholder/400/320"
+            alt="Hidden Beach"
+            class="post-img"
+          />
+          <div class="post-content">
+            <span class="post-category">Adventure</span>
+            <h3 class="post-title">Discovering Hidden Beaches in Thailand</h3>
+            <p class="post-excerpt">
+              Away from the crowds, these secluded beaches offer a glimpse of
+              paradise that few travelers ever experience...
+            </p>
+            <div class="post-meta">
+              <span>April 10, 2025</span>
+              <span>5 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <img
+            src="/api/placeholder/400/320"
+            alt="Food Markets"
+            class="post-img"
+          />
+          <div class="post-content">
+            <span class="post-category">Food</span>
+            <h3 class="post-title">Top 10 Street Food Markets in Asia</h3>
+            <p class="post-excerpt">
+              From night markets in Taipei to floating markets in Bangkok,
+              here's your guide to Asia's best street food...
+            </p>
+            <div class="post-meta">
+              <span>April 2, 2025</span>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <img
+            src="/api/placeholder/400/320"
+            alt="Solo Travel"
+            class="post-img"
+          />
+          <div class="post-content">
+            <span class="post-category">Travel Tips</span>
+            <h3 class="post-title">The Ultimate Guide to Solo Travel</h3>
+            <p class="post-excerpt">
+              Everything you need to know about traveling alone, from safety
+              tips to making connections on the road...
+            </p>
+            <div class="post-meta">
+              <span>March 25, 2025</span>
+              <span>12 min read</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="/api/placeholder/500/600" alt="Travel Blogger" />
+        </div>
+        <div class="about-content">
+          <h2 class="about-title">Hi, I'm Sarah</h2>
+          <p class="about-text">
+            I'm a full-time travel blogger and photographer with a passion for
+            exploring off-the-beaten-path destinations. After quitting my
+            corporate job in 2018, I've visited over 50 countries across 6
+            continents.
+          </p>
+          <p class="about-text">
+            Through this blog, I share detailed travel guides, photography tips,
+            and stories that inspire others to see the world. When I'm not
+            traveling, you can find me hiking with my dog or trying new recipes
+            inspired by my travels.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon">
+              <i>f</i>
+            </a>
+            <a href="#" class="social-icon">
+              <i>in</i>
+            </a>
+            <a href="#" class="social-icon">
+              <i>ig</i>
+            </a>
+            <a href="#" class="social-icon">
+              <i>tw</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter-section">
+      <h2 class="newsletter-title">Join My Travel Community</h2>
+      <p class="newsletter-text">
+        Subscribe to my newsletter and get exclusive travel tips, destination
+        guides, and special offers delivered straight to your inbox.
+      </p>
+      <form class="newsletter-form">
+        <input
+          type="email"
+          placeholder="Your email address"
+          class="newsletter-input"
+          required
+        />
+        <button type="submit" class="newsletter-button">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>WanderLust</h3>
+          <p>
+            Sharing travel stories and inspiration from around the world since
+            2018.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Destinations</h3>
+          <ul class="footer-links">
+            <li><a href="#">Asia</a></li>
+            <li><a href="#">Europe</a></li>
+            <li><a href="#">Africa</a></li>
+            <li><a href="#">North America</a></li>
+            <li><a href="#">South America</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Travel Resources</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Travel Gear</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="footer-links">
+            <li>Email: hello@wanderlust.com</li>
+            <li>For collaborations: work@wanderlust.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 WanderLust. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
