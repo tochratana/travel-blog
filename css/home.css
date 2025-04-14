@@ -5,6 +5,10 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f9f9f9;
   color: #333;
@@ -212,6 +216,8 @@ body {
   align-items: center;
   gap: 0.5rem;
   opacity: 0.8;
+  color: white;
+  text-decoration: none;
 }
 
 .scroll-indicator p {
