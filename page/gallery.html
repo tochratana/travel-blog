@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <a href="../index.html" class="logo">WanderLust</a>
+        <div class="nav-links">
+          <a
+            href="../index.html
+				"
+            >Home</a
+          >
+          <a href="./destination.html">Destinations</a>
+          <a href="./travel-tip.html">Travel Tips</a>
+          <a href="./gallery.html" style="border-bottom: 2px solid #ffd700">Gallery</a>
+          <a href="#">About</a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <div class="mobile-nav">
+        <ul class="mobile-nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./destination.html">Destinations</a></li>
+          <li><a href="#">Travel Tips</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Travel Gallery</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for inspiration" />
+      </div>
+      <div class="masonry-grid" id="masonry-grid">
+        <!-- Pins will be added dynamically -->
+      </div>
+      <!-- FOOTER -->
+    </main>
+
+    <script src="../js/gallery.js"></script>
+  </body>
+</html>
