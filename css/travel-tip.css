@@ -1,12 +1,123 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 70px 0 0 0;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/api/placeholder/1000/400");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tips-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.tip-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+.tip-card h3 {
+  color: #ffd700;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.tip-card p {
+  margin-bottom: 1rem;
+}
+
+.tip-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+.cta-section {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: #e9f5ff;
+  border-radius: 8px;
+}
+
+.cta-section h2 {
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #ffd700;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffe701;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
   }
-  
-  body {
-	background-color: #f9f9f9;
-	color: #333;
-	line-height: 1.6;
+
+  .hero p {
+    font-size: 1rem;
   }
+
+  .tips-container {
+    grid-template-columns: 1fr;
+  }
+}
