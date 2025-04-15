@@ -91,6 +91,16 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+  }
+}
+
 .about-image {
   border-radius: var(--border-radius);
   overflow: hidden;
